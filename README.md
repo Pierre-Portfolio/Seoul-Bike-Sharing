@@ -28,6 +28,7 @@ The crucial part is the prediction of bike count required at each hour for the s
 ## Authors
 
 - [@Pierre](https://github.com/Pierre-Portfolio)
+- [@Anthony](https://github.com/Cyd-des-Tenebres)
 
 ## Screenshots
 

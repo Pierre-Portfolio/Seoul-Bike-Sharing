@@ -2,3 +2,4 @@ il faut choisir nous même LES MODELES de sklearn
 transformer les data binaire en int
 les float en int
 virée les data qui ont rien en rapport avec la problématique
+date limite : 5 janvier 00h

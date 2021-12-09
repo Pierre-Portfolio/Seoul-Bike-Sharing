@@ -4,7 +4,7 @@
 
 ---
 
-# ESILV - Python for data analysis - project 2022
+# ESILV - Seoul Bike Sharing
 
 - Steps 1 : Analyse the differents variables of a dataset in the context
 - Steps 2 : Show the link between the variables and the target with Jupyter

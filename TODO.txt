@@ -13,6 +13,7 @@ il faut choisir nous même LES MODELES de sklearn
 #df
 
 #Faire un grid search pour comparer plusieur model
+# sklearn de la technique GridSearchCV evite egalement l'overfitting des trees
 #faire l'api que pour le meillieur model
 #ppt expliquer la démarche, pas bcp d'explications
 #boosting = regression 

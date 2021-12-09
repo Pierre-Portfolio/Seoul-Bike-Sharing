@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/Pierre-Portfolio/ProjetPythonA4/Picture/Velo-Gif.gif" alt="Bikes" />
+  <img src="./Picture/Velo-Gif.gif" alt="Bikes" />
 </h1>
 
 ---

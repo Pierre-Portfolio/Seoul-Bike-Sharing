@@ -1,28 +1,18 @@
 date limite : 5 janvier 00h
-il faut choisir nous même LES MODELES de sklearn
-#Faire une ACP entre Temperature et Dew point temperature
-#contribution des variables
 
-#The variables Humidity , Rainfall and Snowfall
-#Voir Screeplot
+#Voir Screeplot, matplotlib and seaborn
+#faire un max de graph par rapport a la location durant les temperatures ainsi que les saison
 
-#Filter useless var of dataset
-#find correlation with rented bike count
-#uselesscolum = ['Humidity(%)','Dew point temperature(°C)']
-#df.drop(uselesscolum,axis=1, inplace=True)
-#df
+##Faire un grid search pour comparer plusieur model
+##sklearn de la technique GridSearchCV evite egalement l'overfitting des trees
 
-#Faire un grid search pour comparer plusieur model
-# sklearn de la technique GridSearchCV evite egalement l'overfitting des trees
-#faire l'api que pour le meillieur model
-#ppt expliquer la démarche, pas bcp d'explications
-#boosting = regression 
-#random forest = classification
+###faire une fonction de temp
+###faire un tableau pour garder les meillieurs model sur la exactly preduct et la approximative preduct ainsi que le temp
 
-cree un troisieme model ou on fusionne les variables inutiles
-faire un max de graph par rapport a la location durant les temperatures ainsi que les saison
-ameliorer graph des corrélation
-faire une fonction de temp car important pour gérer l'api qui prend comme argument la fonction a predict
-faire un tableau pour garder les meillieurs model sur la exactly preduct et la approximative preduct
-faire un Reseau de neurone
-voir liste des methodes proposé par sklearn pour du ml + prof
+####faire un Reseau de neurone
+####voir liste des methodes proposé par sklearn pour du ml + prof
+####faire l'api que pour le meillieur model
+####ppt expliquer la démarche, pas bcp d'explications
+
+####boosting = regression 
+####random forest = classification

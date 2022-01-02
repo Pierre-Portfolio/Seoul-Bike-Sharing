@@ -2,17 +2,9 @@ date limite : 5 janvier 00h
 
 #Voir Screeplot, matplotlib and seaborn
 #faire un max de graph par rapport a la location durant les temperatures ainsi que les saison
+#FONCTION POUR AFFICHER LES RESIDU ( voir tp5 scikit learn)
+#faire une petite fonction ou integrer dans une autre pour créer les call de save puis d'afficher le dataframe
 
-##Faire un grid search pour comparer plusieur model
-##sklearn de la technique GridSearchCV evite egalement l'overfitting des trees
-
-###faire une fonction de temp
-###faire un tableau pour garder les meillieurs model sur la exactly preduct et la approximative preduct ainsi que le temp
-
-####faire un Reseau de neurone
-####voir liste des methodes proposé par sklearn pour du ml + prof
 ####faire l'api que pour le meillieur model
+####faire un Reseau de neurone
 ####ppt expliquer la démarche, pas bcp d'explications
-
-####boosting = regression 
-####random forest = classification

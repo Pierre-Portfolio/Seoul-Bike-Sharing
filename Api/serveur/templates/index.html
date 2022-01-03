@@ -1,10 +1,54 @@
-<head>
-	<title>Vous Etes Perdu ?</title>
-</head>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+	<title>Api Rented Bike Count</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+ 
+  <form method="post" action="">
+    <h1>Predict the number of rented bike</h1>
+    <hr>
+        
+    <p>Hour</p>
+    <input type="number" name="Hour" value="Hour" />
 
-<body>
-	<h1>Perdu sur l'Internet ?</h1>
-	<h2>Pas de panique, on va vous aider</h2>
-	<strong>{{asterion}}</strong>
-</body>
+    <p>Temperature</p>    
+    <input type="number" name="Temperature" value="Temperature" />
+    
+    <p>Humidity</p>    
+    <input type="number" name="Humidity" value="Humidity" />
+
+    <p>WindSpeed</p>
+    <input type="number" name="WindSpeed" value="WindSpeed" />
+
+    <p>Visibility</p>
+    <input type="number" name="Visibility" value="Visibility" />
+
+    <p>SolarRadiation</p>
+    <input type="number" name="SolarRadiation" value="SolarRadiation" />
+
+    <p>Rainfall</p>
+    <input type="number" name="Rainfall" value="Rainfall" />
+
+    <p>Snowfall</p>
+    <input type="number" name="Snowfall" value="Snowfall" />
+
+    <p>Season</p>
+    <input type="number" name="Season" value="Season" />
+
+    <p>Holiday</p>
+    <input type="number" name="Holiday" value="Holiday" />
+
+    <p>Date</p>
+    <input type="number" name="Date" value="" />
+    <!-- Transformer date en jours, mois et dayofweek et fonctionningday NE PAS OUBLIER DE LES REMMETRE DANS L ORDRE-->
+    <input class="sendvalue" type="submit" value="Predict">
+    
+     <hr>
+     <p class="copyrigth">© By Pierre & Anthony in 2022</p>
+     <strong>{{asterion}}</strong>
+  </form>
+  </body>
 </html>

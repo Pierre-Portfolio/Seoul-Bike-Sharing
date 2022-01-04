@@ -46,6 +46,10 @@ input , select {
     border: 1px solid #fff;
 }
 
+strong {
+    display: block;
+}
+
 .sendvalue {
     background-color: rgba(50, 205, 50, 0.6);
     width: 250px;

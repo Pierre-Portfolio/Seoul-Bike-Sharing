@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+	<title>Api Rented Bike Count</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="icon" href="{{ url_for('static', filename='icon/bike.png') }}" type="image/icon">
+  </head>
+  <body>
+ 
+  <form method="post" action="">
+    <h1>Predict the number of rented bike</h1>
+    <hr>
+    <div class="container">
+        <div>
+            <label for="Hour">Hour</label>
+            <input type="number" min="0" max="23" name="Hour" id="Hour" value="0" />
+        </div>
+        
+        <div>
+            <label for="Temperature">Temperature (°C)</label>  
+            <input type="number" step="0.01" name="Temperature" id="Temperature" value="0" />
+        </div>
+        
+        <div> 
+            <label for="Humidity">Humidity (%)</label>  
+            <input type="number" min="0" max="100" name="Humidity" id="Humidity" value="0" />
+        </div>
+
+        <div>
+            <label for="WindSpeed">Wind Speed (m/s)</label>  
+            <input type="number" step="0.01" min="0" max="10" name="WindSpeed" id="WindSpeed" value="0" />
+        </div>
+   
+        <div>    
+            <label for="Visibility">Visibility (10m)</label>  
+            <input type="number" min="0" max="2000" name="Visibility" id="Visibility" value="0" />
+        </div>    
+
+        <div>
+            <label for="Rainfall">Rainfall (mm)</label>  
+            <input type="number" step="0.01" min="0" max="50" name="Rainfall" id="Rainfall" value="0" />
+        </div>
+        
+        <div>
+            <label for="Snowfall">Snowfall (cm)</label>  
+            <input type="number" step="0.01" min="0" max="15" name="Snowfall" id="Snowfall" value="0" />
+        </div>
+        
+        <div>
+            <label for="Season">Season</label>  
+            <select id="Season" name="Season">
+                <option value="1">Winter</option>
+                <option value="2">Spring</option>
+                <option value="3">Summer</option>
+                <option value="4">Autumn</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="Holiday">Holiday</label>  
+            <select id="Holiday" name="Holiday">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="FunctioningDay">Functioning Day</label>  
+            <select id="FunctioningDay "name="FunctioningDay">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="Month">Month</label>  
+            <input type="number" min="1" max="12" id="Month" name="Month" value="1" />
+        </div>
+        
+        <div>
+            <label for="Day">Day</label>  
+            <input type="number" min="1" max="31" id="Day" name="Day" value="1" />
+        </div>
+    
+    </div>
+    
+    <div>
+        <label class="nocontainer" for="SolarRadiation">Solar Radiation (MJ/m2)</label>  
+        <input type="number" step="0.01" min="0" max="4" name="SolarRadiation" id="SolarRadiation" value="0" />
+    </div>
+    
+    <br>
+    <input class="sendvalue" type="submit" value="Launch the prediction">
+         
+    <strong>{{prediction}}</strong>
+    <hr>
+    <p class="copyrigth">© By Pierre & Anthony in 2022</p>
+  </form>
+  </body>
+</html>

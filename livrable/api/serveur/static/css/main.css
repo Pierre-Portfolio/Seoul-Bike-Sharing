@@ -1,0 +1,96 @@
+body {
+    background-image: url(../background/background.jpg);
+    background-attachment:fixed;
+    background-position:center center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    text-align:center;
+}
+
+h1 {
+    font-style: Bold;
+    text-align: center;
+}
+
+form {
+	margin: 50px 20%;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+	height: auto;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 15px;
+    display: block;
+}
+
+hr {
+    height: 1px;
+    color: #123455;
+    background-color: #123455;
+    border: none;
+}
+
+input , select {
+    width: 10.5rem;
+    border-radius : 4px;
+    border: 1px solid #fff;
+}
+
+strong {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.container {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Responsive */
+@media screen and (max-width: 1400px) {
+  .container {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.nocontainer {
+    margin-top: 30px;
+}
+
+.sendvalue {
+    background-color: rgba(50, 205, 50, 0.6);
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.copyrigth {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}

@@ -1,6 +1,8 @@
 #import librairies
+print("Loading Librairies ...")
 import pandas as pd
 import numpy as np
+from math import *
 
 from xgboost import XGBRegressor
 from flask import Flask , render_template, request
@@ -9,6 +11,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
 
 #Charge the Dataset
+print("Loading Dataset ...")
 SeoulBikeDf = pd.read_csv("./static/csv/SeoulBikeData.csv", encoding="latin1")
 
 #Transformation quantitative variable to vector
@@ -49,12 +52,20 @@ grid = GridSearchCV(algo, hyperparametres, n_jobs=-1)
 grid.fit(x_train, y_train)
 
 app = Flask(__name__)
+print("Loading : Done")
+
+#Launch the main page
 @app.route("/")
 def home():
     return render_template('index.html')
 
+#Launch on the button event
 @app.route('/', methods=['POST'])
 def homepredict():
-    return render_template('index.html', prediction = request.form['Hour'])
+    predictDf = [[int(request.form['Hour']), float(request.form['Temperature']), int(request.form['Humidity']), float(request.form['WindSpeed']), float(request.form['Visibility']), float(request.form['SolarRadiation']), float(request.form['Rainfall']), float(request.form['Snowfall']), int(request.form['Season']), int(request.form['Holiday']), int(request.form['FunctioningDay']), int(request.form['Month']), int(request.form['Day'])]]
+    print(predictDf)
+    
+    result = grid.predict(predictDf)
+    return render_template('index.html', prediction = "The prediction for this features : " + str(ceil(result[0])))
 
 app.run(host='127.0.0.1', port=8080, debug=False)

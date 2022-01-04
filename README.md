@@ -21,7 +21,7 @@ JUPYTER
 FLASK
 
 ## Api Demo
-![App Screenshot](./static/demo.mp4)
+![App Screenshot](./static/demoCompressed.mp4)
 
 ## Conclusion
 This projects was a real challenge for us as well on a technical level with software like Django or Github

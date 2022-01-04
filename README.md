@@ -21,7 +21,7 @@ JUPYTER
 FLASK
 
 ## Api Demo
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](./static/demo.mp4)
+[![Watch the video](https://img.youtube.com/vi/1Oq7C6dGsKY/maxresdefault.jpg)](https://youtu.be/1Oq7C6dGsKY)
 
 ## Conclusion
 This projects was a real challenge for us as well on a technical level with software like Django or Github

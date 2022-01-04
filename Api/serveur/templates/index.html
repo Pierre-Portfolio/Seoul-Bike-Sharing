@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
 	<title>Api Rented Bike Count</title>
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="icon" href="{{ url_for('static', filename='icon/bike.png') }}" type="image/icon">
   </head>
   <body>
  
@@ -12,63 +13,96 @@
     <hr>
     
     <div>
-        <p>Hour</p>
-        <input type="text" name="Hour" value="" />
+        <label for="Hour">Hour</label>
+        <input type="number" min="0" max="23" name="Hour" id="Hour" value="" />
     </div>
     
     <div>
-        <p>Temperature</p>    
-        <input type="text" name="Temperature" value="" />
+        <label for="Temperature">Temperature</label>  
+        <input type="number" step="0.01" name="Temperature" id="Temperature" value="" />
+    </div>
+    
+    <div> 
+        <label for="Humidity">Humidity</label>  
+        <input type="number" min="0" max="100" name="Humidity" id="Humidity" value="" />
     </div>
     
     <div>
-        <p>Humidity</p>    
-        <input type="text" name="Humidity" value="" />
-    </div>
-    
-    <div>
-        <p>Wind Speed</p>
-        <input type="text" name="WindSpeed" value="" />
+        <label for="WindSpeed">Wind Speed</label>  
+        <input type="number" min="0" max="10" name="WindSpeed" id="WindSpeed" value="" />
     </div>
     
     <div>    
-        <p>Visibility</p>
-        <input type="text" name="Visibility" value="" />
+        <label for="Visibility">Visibility</label>  
+        <input type="number" min="0" max="2000" name="Visibility" id="Visibility" value="" />
     </div>
     
     <div>
-        <p>Solar Radiation</p>
-        <input type="text" name="SolarRadiation" value="" />
+        <label for="SolarRadiation">Solar Radiation</label>  
+        <input type="number" min="0" max="4" step="0.01" id="SolarRadiation" name="SolarRadiation" value="" />
     </div>
     
     <div>
-        <p>Rainfall</p>
-        <input type="text" name="Rainfall" value="" />
+        <label for="Rainfall">Rainfall</label>  
+        <input type="number" min="0" max="50" id="Rainfall" name="Rainfall" value="" />
     </div>
     
     <div>
-        <p>Snowfall</p>
-        <input type="text" name="Snowfall" value="" />
+        <label for="Snowfall">Snowfall</label>  
+        <input type="number" min="0" max="15" id="Snowfall" name="Snowfall" value="" />
     </div>
     
     <div>
-        <p>Season</p>
-        <input type="text" name="Season" value="" />
+        <label for="Season">Season</label>  
+        <select id="Season" name="Season">
+            <option value="1">Winter</option>
+            <option value="2">Spring</option>
+            <option value="3">Summer</option>
+            <option value="4">Autumn</option>
+        </select>
     </div>
     
     <div>
-        <p>Holiday</p>
-        <input type="text" name="Holiday" value="" />
+        <label for="Holiday">Holiday</label>  
+        <select id="Holiday" name="Holiday">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
     </div>
     
     <div>
-        <p>Date</p>
-        <input type="date" name="Date" value="" />
+        <label for="FunctioningDay">Functioning Day</label>  
+        <select id="FunctioningDay "name="FunctioningDay">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
     </div>
     
-    <!-- Transformer date en jours, mois et dayofweek et fonctionningday NE PAS OUBLIER DE LES REMMETRE DANS L ORDRE-->
+    <div>
+        <label for="Month">Month</label>  
+        <input type="number" min="1" max="12" id="Month" name="Month" value="" />
+    </div>
+    
+    <div>
+        <label for="Day">Day</label>  
+        <input type="number" min="1" max="31" id="Day" name="Day" value="" />
+    </div>
+    
+    <div>
+        <label for="DayOfWeek">Day Of Week</label>  
+        <select id="DayOfWeek" name="DayOfWeek">
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="5">Friday</option>
+            <option value="6">Saturdays</option>
+            <option value="7">Sunday</option>
+        </select>
+    </div>
+    
     <br>
-    <input class="sendvalue" type="submit" value="Predict">
+    <input class="sendvalue" type="submit" value="Launch the prediction">
     
      <hr>
      <p class="copyrigth">© By Pierre & Anthony in 2022</p>

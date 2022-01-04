@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./Static/Velo-Gif.gif" alt="Bikes" />
+  <img src="./static/Velo-Gif.gif" alt="Bikes" />
 </h1>
 
 ---
@@ -21,7 +21,7 @@ JUPYTER
 FLASK
 
 ## Api Demo
-![App Screenshot](./Static/demo.mp4)
+![App Screenshot](./static/demo.mp4)
 
 ## Conclusion
 This projects was a real challenge for us as well on a technical level with software like Django or Github

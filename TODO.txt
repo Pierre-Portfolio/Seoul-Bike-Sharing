@@ -1,11 +1,6 @@
-date limite : 5 janvier 00h
-
 #Commenter les differents resultats des models
 #Fixe probleme de score et préciser que c'est R2
 #mettre des labels sur les 2 dernier graphs
-#FONCTION POUR AFFICHER LES RESIDU ( voir tp5 scikit learn)
-#faire une petite fonction ou integrer dans une autre pour créer les call de save puis d'afficher le dataframe
 
-####faire l'api que pour le meillieur model
-####faire un Reseau de neurone
-####ppt expliquer la démarche, pas bcp d'explications
+##faire un Reseau de neurone
+##pptx expliquer la démarche, pas bcp d'explications

@@ -13,7 +13,7 @@
 
 ## Problem
 
-The crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes. Thus we are in a regression problem.
+- The crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes. Thus we are in a regression problem.
 
 ## Tech Stack
 - PYTHON
@@ -33,7 +33,7 @@ The crucial part is the prediction of bike count required at each hour for the s
 - Bagging
 
 ## Responsive Api Video Demo
-You can see here a little video presenting the API used Bagging Regressor Model
+- You can see here a little video presenting the API used Bagging Regressor Model
 <img src="./static/demo.gif" alt="Bikes" />
 
 ## Conclusion

@@ -20,7 +20,7 @@
 - JUPYTER
 - FLASK
 
-## Model Used
+## Model Testing in Jupyter
 
 - KNN
 - Linear Regression
@@ -41,5 +41,5 @@
 
 ## Authors
 
-[@Pierre](https://github.com/Pierre-Portfolio)
-[@Anthony](https://github.com/Cyd-des-Tenebres)
+- [@Pierre](https://github.com/Pierre-Portfolio)
+- [@Anthony](https://github.com/Cyd-des-Tenebres)

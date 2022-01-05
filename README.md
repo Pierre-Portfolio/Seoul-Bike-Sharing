@@ -42,6 +42,7 @@
 
 ## Conclusion
 
+- Seoul people first use bikes rented for going to work and coming back home
 - Linear Regression is the fastest model
 - The best dataset is the number 2
 - Bagging is providing the best r2 accuracy

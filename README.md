@@ -34,6 +34,7 @@
 - Bagging
 
 ##Model
+<img src="./static/Model.png" alt="Bikes" />
 
 ## Conclusion
 - Linear Regression is the fastest model

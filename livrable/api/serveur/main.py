@@ -1,4 +1,4 @@
-#import librairies
+#Import librairies
 print("Loading Librairies ...")
 import pandas as pd
 import numpy as np
@@ -64,6 +64,6 @@ def home():
 def homepredict():
     predictDf = [[int(request.form['Hour']), float(request.form['Temperature']), int(request.form['Humidity']), float(request.form['WindSpeed']), float(request.form['Visibility']), float(request.form['SolarRadiation']), float(request.form['Rainfall']), float(request.form['Snowfall']), int(request.form['Season']), int(request.form['Holiday']), int(request.form['FunctioningDay']), int(request.form['Month']), int(request.form['Day'])]]
     result = grid.predict(predictDf)
-    return render_template('index.html', prediction = "The prediction for this features : " + str(ceil(result[0])))
+    return render_template('index.html', prediction = "The prediction for this features is : " + str(ceil(result[0])))
 
 app.run(host='127.0.0.1', port=8080, debug=False)

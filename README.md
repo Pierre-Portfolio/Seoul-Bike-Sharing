@@ -13,15 +13,27 @@
 
 ## Problem
 
-The crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes
+The crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes. Thus we are in a regression problem.
 
 ## Tech Stack
-PYTHON
-JUPYTER
-FLASK
+- PYTHON
+- JUPYTER
+- FLASK
+
+## Model Used
+
+- KNN
+- Linear Regression
+- Cross Validation
+- Lasso
+- AdaBoost
+- ExtraTrees
+- Random Forest
+- XGBoost
+- Bagging
 
 ## Responsive Api Video Demo
-You can see here a little video presenting the API
+You can see here a little video presenting the API used Bagging Regressor Model
 <img src="./static/demo.gif" alt="Bikes" />
 
 ## Conclusion

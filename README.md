@@ -36,7 +36,7 @@
 - XGBoost
 - Bagging
 
-##Model Result
+## Model Result
 
 <img src="./static/Model.png" alt="Bikes" />
 

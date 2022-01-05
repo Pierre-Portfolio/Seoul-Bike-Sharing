@@ -20,8 +20,9 @@ PYTHON
 JUPYTER
 FLASK
 
-## Api Demo
-[![Watch the video](https://img.youtube.com/vi/1Oq7C6dGsKY/maxresdefault.jpg)](https://youtu.be/1Oq7C6dGsKY)
+## Responsive Api Video Demo
+You can see here a little video presenting the API
+<img src="./static/demo.gif" alt="Bikes" />
 
 ## Conclusion
 This projects was a real challenge for us as well on a technical level with software like Django or Github

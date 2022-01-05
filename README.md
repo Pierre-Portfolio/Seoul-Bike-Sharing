@@ -33,14 +33,13 @@
 - Bagging
 
 ## Responsive Api Video Demo
-- You can see here a little video presenting the API used Bagging Regressor Model
+- You can see here a little video presenting the API
 <img src="./static/demo.gif" alt="Bikes" />
 
 ## Conclusion
-This projects was a real challenge for us as well on a technical level with software like Django or Github
-
+- Bagging given a really good r2 score with 98% of accuracy. So its with this model of we have created the API.
 
 ## Authors
 
-- [@Pierre](https://github.com/Pierre-Portfolio)
-- [@Anthony](https://github.com/Cyd-des-Tenebres)
+[@Pierre](https://github.com/Pierre-Portfolio)
+[@Anthony](https://github.com/Cyd-des-Tenebres)

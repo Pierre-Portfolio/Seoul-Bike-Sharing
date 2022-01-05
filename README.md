@@ -21,6 +21,9 @@
 - SPYDER
 - FLASK
 
+## Data-Visualizations
+<img src="./static/Graph.png" alt="Bikes" />
+
 ## Model Testing in Jupyter
 
 - KNN
@@ -33,15 +36,18 @@
 - XGBoost
 - Bagging
 
-##Model
+##Model Result
+
 <img src="./static/Model.png" alt="Bikes" />
 
 ## Conclusion
+
 - Linear Regression is the fastest model
 - The best dataset is the number 2
 - Bagging is providing the best r2 accuracy
 
 ## Responsive Api Video Demo
+
 - You can see here a little video presenting the API
 <img src="./static/demo.gif" alt="Bikes" />
 

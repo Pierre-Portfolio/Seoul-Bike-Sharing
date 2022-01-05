@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from math import *
 
-from xgboost import XGBRegressor
+from sklearn.ensemble import BaggingRegressor
 from flask import Flask , render_template, request
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV
@@ -41,10 +41,10 @@ x_train = scaler.transform(x_train, copy = False)
 x_test  = scaler.transform(x_test, copy = False)
 
 #params
-algo = XGBRegressor()
+algo = BaggingRegressor()
 hyperparametres = {
-    "max_depth" : [4],
-    "gamma" : [0.077, 0.5, 0.75, 1]
+    "n_estimators"         : [10, 25],
+    'bootstrap'            : [True,False]
 }
 
 #Fitting Model         
@@ -63,8 +63,6 @@ def home():
 @app.route('/', methods=['POST'])
 def homepredict():
     predictDf = [[int(request.form['Hour']), float(request.form['Temperature']), int(request.form['Humidity']), float(request.form['WindSpeed']), float(request.form['Visibility']), float(request.form['SolarRadiation']), float(request.form['Rainfall']), float(request.form['Snowfall']), int(request.form['Season']), int(request.form['Holiday']), int(request.form['FunctioningDay']), int(request.form['Month']), int(request.form['Day'])]]
-    print(predictDf)
-    
     result = grid.predict(predictDf)
     return render_template('index.html', prediction = "The prediction for this features : " + str(ceil(result[0])))
 

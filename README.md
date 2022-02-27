@@ -7,13 +7,13 @@
 # ESILV - Seoul Bike Sharing
 ## About Dataset
 
-- Rental bikes are currently introduced in many urban cities to enhance the mobility comfort. It is important to make the rental bike available and accessible to the public at the right time as it lessens the waiting time. Eventually, providing the city with a stable supply of rental bikes becomes a major concern.
+- Rental bikes have been introduced in many cities to improve the mobility. The way they are made available to the public is critical to lower the waiting time. Providing the city with a sufficient set of rental bikes becomes a major concern.
 
-- The dataset contains weather information (Temperature, Humidity, Windspeed, Visibility, Dewpoint, Solar radiation, Snowfall, Rainfall), the number of bikes rented per hour and date information.
+- The data set contains complete weather information (Temperature, Humidity, Wind-speed, Visibility, Dew-point, Solar radiation, Snowfall, Rainfall) as well as the number of bikes in use all along the day.
 
 ## Problem
 
-- The crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes. Thus we are in a regression problem.
+- The crucial part is to estimate the number of bikes necessary to cover the needs of the city according  the time of the day, the day of the week and the season. We are therefore facing a regression problem for the machine learning.
 
 ## Techno Used during this project
 - PYTHON
@@ -42,9 +42,9 @@
 
 ## Conclusion
 
-- Seoul people first use bikes rented for going to work and coming back home
+- Seoul people mainly use rental bikes for going to work and coming back home
 - Linear Regression is the fastest model
-- The best dataset is the number 2
+- The best data set is the number #2
 - Bagging is providing the best r2 accuracy
 
 ## Responsive Api Video Demo

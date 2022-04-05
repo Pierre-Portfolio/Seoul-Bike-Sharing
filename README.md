@@ -55,4 +55,4 @@
 ## Authors
 
 - [@Pierre](https://github.com/Pierre-Portfolio)
-- [@Anthony](https://github.com/Cyd-des-Tenebres)
+- [@Cyd](https://github.com/Cyd-des-Tenebres)
